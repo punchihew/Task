@@ -31,12 +31,12 @@
   //Add it to the Ordered List
 
   document.querySelector("button").addEventListener("click",function () {
-    var val = document.querySelector("#txt").val;
-    const list = document.createElement("li");
-    list.className = "list-group-item";
-    list.textContent = val;
-    document.querySelector("#list").appendChild(list);
-    document.querySelector("#txt").val = "";
+    var value = document.querySelector("#txt").value;
+    const values = document.createElement("li");
+    values.className = "list-group-item";
+    values.textContent = value;
+    document.querySelector("#list").appendChild(values);
+    document.querySelector("#txt").value = "";
 
 
   })
