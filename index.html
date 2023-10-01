@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task One</title>
+    <link rel="stylesheet" href="assts/css/bootstrap.css">
+</head>
+<body>
+<section class="container mt-3">
+    <section class="row">
+        <!--Case One-->
+        <div class="col">
+            <h1 class="h1">Hello There How are you.?</h1>
+            <input id="txt" class="form-control" type="text" placeholder="Input Something">
+            <button id="btn1" class="mt-2 btn btn-danger">Change Text</button>
+        </div>
+
+
+    </section>
+</section>
+
+<script>
+    document.querySelector('#txt').addEventListener("keyup",function(){
+        document.querySelector("h1").innerText=document.querySelector("input").value
+    });
+    document.querySelector('#btn1').addEventListener("click",function(){
+        document.querySelector("h1").style.color='red'
+    });
+
+
+</script>
+</body>
+</html>
